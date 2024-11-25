@@ -1,6 +1,9 @@
 from collections import Counter
 
 def CharCode(chars):
+    if(len(chars)==1):
+        chars[0][2]='1'
+        return chars
     if(len(chars)==2):
         chars[0][2]='1'
         chars[1][2]='0'
